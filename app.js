@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
             url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}&page=${page}`;
         } else if (filter === 'tv') {
             url = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${query}&page=${page}`;
-        } else if (filter === 'new movies') {
-            url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&sort_by=release_date.desc&page=${page}`;
+        } else if (filter === 'new') {
+            url = `https://api.themoviedb.org/3/movie/latest?api_key=${apiKey}`;
         } else if (filter === 'popular') {
             url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`;
         }
